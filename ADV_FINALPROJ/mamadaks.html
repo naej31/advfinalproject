@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food And Restaurant</title>
+    <link rel="stylesheet" href="mamadaks.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Hurricane&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Open+Sans:wght@400;700&family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="back-arrow"><i class="fas fa-arrow-left"></i>HOME PAGE</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#order">order</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-cart-shopping shop-btn"></i>
+            <i class="fa-solid fa-heart heart-btn"></i>
+            <i class="fa-solid fa-magnifying-glass search-btn"></i>
+        </div>
+    </header>
+
+    <div class="cart-modal hidden">
+        <div class="cart-modal-content">
+            <h2>Your Cart</h2>
+            <ul class="cart-items"></ul>
+            <div class="cart-total">
+                Total: $<span class="total-price">0.00</span>
+            </div>
+            <button class="btn checkout-btn">Proceed to Checkout</button>
+            <button class="btn close-cart">Close</button>
+        </div>
+    </div>
+
+    <section class="home" id="home">
+        <div class="content" data-aos="fade-right">
+            <h3>Mama Dak's Sisigan</h3>
+            <p>Mama Dak's Sisig is a popular eatery known for its mouthwatering, sizzling sisig. With a perfect blend of flavors, we serve this classic Filipino dish with a twist, offering a satisfying and hearty meal that’s perfect for sharing with family and friends.</p>
+        </div>
+
+        <div class="image" data-aos="fade-up">
+            <img src="mamadaksahome.png">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="image" data-aos="fade-right"></div>
+        <div class="content" data-aos="fade-left">
+            <h3>a word about us</h3>
+            <p>Mama Dak's Sisig is a school-based eatery that serves up a delicious variety of sizzling sisig to students, teachers, and staff. Known for our flavorful take on this classic Filipino dish, we focus on using fresh ingredients and creating meals that are both satisfying and affordable.</p>
+            <p>Whether you're looking for a quick snack or a full meal, Mama Dak's Sisig is the place to be. We aim to bring a taste of home to the school community, offering comfort food that fills you up and brings joy with every bite.</p>
+            <button class="btn">learn more</button>
+        </div>
+
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="main-heading"> food <span>menu</span></h1>
+        <div class="container">
+            <div class="box" data-aos="fade-right">
+                <img src="mamadaks.jpg">
+                <h3>Sisig</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price" data-price="30">₱65.00</div>
+                <button class="btn add-to-cart">add to cart</button>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <img src="lumpianimamadaks.jpg">
+                <h3>Lumpia</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price" data-price="30">₱7.00</div>
+                <button class="btn add-to-cart">add to cart</button>
+            </div>
+            <div class="box" data-aos="fade-right">
+                <img src="adobonimamadaks.jpg">
+                <h3>Adobo</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price" data-price="30">₱45.00</div>
+                <button class="btn add-to-cart">add to cart</button>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <img src="softdrinksnimamadaks.jpg">
+                <h3>softdrinks</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price" data-price="30">₱15.00</div>
+                <button class="btn add-to-cart">add to cart</button>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="order" id="order">
+        <h1 class="main-heading"> place your <span> order</span> </h1>
+        <div class="container">
+            <form action="" data-aos="fade-up">
+                <input type="text" placeholder="your name" class="box">
+                <input type="email" placeholder="your email" class="box">
+                <input type="password" placeholder="your password" class="box">
+                <input type="number" placeholder="your number" class="box">
+                <textarea cols="30" rows="10" class="box address" placeholder="your address"></textarea>
+                <input type="submit" value="order now" class="btn">
+            </form>
+            <div class="image">
+                <img src="mamadakstore.png" data-aos="fade-down">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-map-marker-alt"></i> davao city, philippines 8000 </p>
+                <p> <i class="fas fa-envelope"></i> mamadaks@gmail.com </p>
+                <p> <i class="fas fa-phone"></i> +639-1234-567-89 </p>
+                <p> <i class="fas fa-phone"></i> +639-2222-333-12 </p>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">order</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#" target="_blank">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">youtube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 400,
+            duration: 1000
+        });
+
+    </script>
+
+    <script src="mamadaks.js"></script>
+
+</body>
+
+</html>
